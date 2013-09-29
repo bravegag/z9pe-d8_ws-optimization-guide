@@ -9,7 +9,13 @@ The main reference for this guid is the official ["ASUS Users Manual":http://dlc
 h2. BIOS Performance Settings
 
 * AI Tweaker Menu 
-** AI Overclock Tuner [Auto]: todo
+** AI Overclock Tuner [Auto]: TODO
+** Clock Spread Spectrum [Disabled]: disabled by default, enhances AI overclocking. 
+* DRAM Timing Control
+** DRAM latencies WRITE, READ etc.: TODO interesting to try different values maybe to match those of the RAM specs.
+* CPU Configuration
+** Execute Disabled Bit [Enabled –> Disabled]: prevents malicious buffer overflow attacks when combined with a supporting OS (only enterprise OS versions support this) e.g. Ubuntu does not support it so we can safely disable it. Researching this feature reveals that it may degrade performance and may even cause application/system crashes in non supported OS. 
+
 
 The following selected BIOS settings (or factors) affect performance in various ways and their values (or factor levels) are discussed.
 
