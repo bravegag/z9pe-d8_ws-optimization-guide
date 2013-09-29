@@ -8,14 +8,14 @@ The main reference for this guid is the official ["ASUS Users Manual":http://dlc
 
 h2. BIOS Performance Settings
 
-* AI Tweaker Menu 
-** AI Overclock Tuner [Auto]: TODO
-** Clock Spread Spectrum [Disabled]: disabled by default, enhances AI overclocking. 
-* DRAM Timing Control
-** DRAM latencies WRITE, READ etc.: TODO interesting to try different values maybe to match those of the RAM specifications.
-* CPU Configuration
-** Execute Disabled Bit [Enabled –> Disabled]: The Execute Disabled Bit (EDB) prevents malicious buffer overflow attacks when combined with a supporting OS (only enterprise OS versions support this) e.g. Ubuntu does not support it so we can safely disable it. Researching this feature reveals that it may degrade performance and may even cause application/system crashes in non supported OS. 
-** Server Class [Custom –> HPC]: options include [Custom, Enterprise or HPC] low level cache prefetching behavior TODO. 
+* <code>AI Tweaker Menu</code> 
+** <code>AI Overclock Tuner [Auto]</code>: TODO
+** <code>Clock Spread Spectrum [Disabled]</code>: disabled by default, enhances AI overclocking. 
+* <code>DRAM Timing Control</code>
+** <code>DRAM latencies WRITE, READ</code> etc.: TODO interesting to try different values maybe to match those of the RAM specifications.
+* <code>CPU Configuration</code>
+** <code>Execute Disabled Bit [Enabled –> Disabled]</code>: The Execute Disabled Bit (EDB) prevents malicious buffer overflow attacks when combined with a supporting OS (only enterprise OS versions support this) e.g. Ubuntu does not support it so we can safely disable it. Researching this feature reveals that it may degrade performance and may even cause application/system crashes in non supported OS. 
+** <code>Server Class [Custom –> HPC]</code>: options include [Custom, Enterprise or HPC] low level cache prefetching behavior TODO. 
 
 
 The following selected BIOS settings (or factors) affect performance in various ways and their values (or factor levels) are discussed.
