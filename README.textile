@@ -1,10 +1,12 @@
 h1. ["ASUS Z9PE-D8_WS":http://www.asus.com/Motherboards/Z9PED8_WS/] motherboard Optimization Guide
 
-This is a Performance Optimization guide for the ["ASUS Z9PE-D8_WS":http://www.asus.com/Motherboards/Z9PED8_WS/] motherboard. The guide initially offers optimizations geared towards HPC but can be extended for other purposes e.g. gaming performance. The optimization includes performance-related BIOS parameters as well as OS settings.
+This is a Performance Optimization guide for the ["ASUS Z9PE-D8_WS":http://www.asus.com/Motherboards/Z9PED8_WS/] motherboard. The guide initially offers optimizations geared towards HPC but can be extended for other purposes e.g. gaming performance. The optimization includes performance-related BIOS parameters as well as OS settings. The motivation of this Guide is to also prepare an ["Experimental Design": http://en.wikipedia.org/wiki/Design_of_experiments] to find the best of the different parameter combinations. 
 
 Why this guide? The Z9PED8 WS is arguably the most powerful Worstation motherboard out there and very appealing solution for HPC and as well above average gaming rig.
 
 h2. BIOS Performance Settings
+
+The following selected BIOS settings (or factors) affect performance in various ways and their values (or factor levels) are discussed.
 
 h2. Operating System Settings
 
