@@ -1,1 +1,11 @@
-This is a Performance Optimization guide for the ["ASUS Z9PE-D8_WS motherboard":http://www.asus.com/Motherboards/Z9PED8_WS/]. The guide initially offers optimizations geared towards HPC but can be extended for other purposes. The optimization will include performance-related BIOS parameters and OS settings. 
+This is a Performance Optimization guide for the ["ASUS Z9PE-D8_WS motherboard":http://www.asus.com/Motherboards/Z9PED8_WS/]. The guide initially offers optimizations geared towards HPC but can be extended for other purposes e.g. gaming performance. The optimization includes performance-related BIOS parameters as well as OS settings. 
+
+h1. BIOS Performance Settings
+
+h2. Operating System Settings
+
+h3. Ubuntu 12.04
+
+h3. Windows 7
+
+h2. Experiments
