@@ -44,7 +44,15 @@ The following selected BIOS settings (or factors) affect performance in various 
 ** <code>Data Scrambling [Enabled –> Disabled]</code>: only relevant for ECC memory better disabled for non-ECC memory, may incur in performance overhead. http://en.wikipedia.org/wiki/Data_scrubbing 
 ** <code>Device Tagging [Disabled ?–> Enabled]</code>: further research needed but appears to offer increasing the amount of main memory cacheable in L2 http://www.webopedia.com/TERM/T/tag_RAM.html 
 ** <code>Allow 2x Refresh [Enabled]</code>: allow modifying the 2x refreshing function, may have an impact in performance and may be worth further investigating. http://en.wikipedia.org/wiki/Memory_refresh
-
+* <code>CPU IIO Bridge</code>
+** <code>Intel I/OAT [Disabled –> Enabled]</code>: enable I/O acceleration technology, High-Speed Networking acceleration http://www.intel.com/content/www/us/en/wireless-network/accel-technology.html, http://www.intel.com/content/www/us/en/io/i-o-acceleration-technology-paper.html http://en.wikipedia.org/wiki/Direct_memory_access#I.2FOAT 
+** <code>DCA Support [Enabled]</code>: Direct Cache Access (DCA) allows a capable I/O device, such as a network controller, to place data directly into CPU cache, reducing cache misses and improving application response times. 
+* <code>Intel VT-d [Enabled –> Disabled]</code>: hardware assisted VT for directed I/O configuration, not relevant for native configurations. 
+* <code>PCI Subsystem Settings –> PCI Latency Timer [32 PCI Bus Clocks –> ?]</code>: TODO good potential finding the best performance parameters for HPC. 
+* <code>PCI Express Settings –> ASPM Support [Disabled]</code>: Active State Power Management controls power consumption of PCI-E peripherals. 
+* <code>ACPI Settings –> Enable ACPI Auto Configuration [* –> Disabled]</code>: disable all ACPI settings e.g. disable Hibernation. 
+* <code>WHEA Configuration –> WHEA Support [Enabled –> Disabled]</code>: Windows Hardware Error Architecture support, irrelevant, we use Ubuntu. 
+* <code>Onboard LAN Configuration –> Intel W82574L OpROM1 [PXE –> iSCSI]</code>: TODO try the setting iSCSI for improved LAN performance (not sure yet whether this will increase the LAN speed to 1000 MB/s) 
 
 h2. Operating System Settings
 
