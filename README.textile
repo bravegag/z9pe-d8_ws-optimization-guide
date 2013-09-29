@@ -30,6 +30,18 @@ h2. BIOS Performance Settings
 ** <code>QPI Link0s [Disabled]</code>: TODO Vudu parameter, no explanation further research may be interesting. 
 ** <code>QPI Link0p [Disabled]</code>: TODO Vudu parameter, no explanation further research may be interesting. 
 ** <code>QPI Link1 [Enabled]</code>: TODO Vudu parameter, no explanation found but may be interesting researching the effects of this. http://www.ubuntu.com/certification/catalog/component/pci/8086:3c90/ “Unknown” category in Ubuntu, may be worth disabling. 
+* <code>Memory Configuration</code> 
+** <code>Compatibility RID [Enabled]</code>: related to compatibility with Sandybridge BIOS spec, further research may be interesting since compatibility settings tend to affect performance in various ways. 
+** <code>Memory Mode [Independent]</code>: explained in detail in this guide http://globalsp.ts.fujitsu.com/dmsp/Publications/public/wp-nehalem-memory-performance-en.pdf from what I understand the Independent mode should lead to performance if the DIMM strips are positioned correctly, we only have one type and all DIMM slots are fully occupied so it should be performance, verify? 
+** <code>NUMA [Enabled]</code>:  http://en.wikipedia.org/wiki/Non-uniform_memory_access 
+** <code>DDR Speed [Auto –> Force DDR 1600Mhz]</code>: fastest supported memory speed already tried increasing to the maximum for the memory model 1866Mhz and the board would no longer boot. 
+** <code>Channel Interleaving [Auto]</code>: may be chosen based on the optimal setting of the DIMM memory, research the values and verify that the optimal values are indeed chosen. 
+** <code>Rank Interleaving [Auto]</code>: may be chosen based on the optimal setting of the DIMM memory, research the values and verify that the optimal values are indeed chosen. 
+** <code>Patrol Scrub [Disabled]</code>: only relevant for ECC memory better disabled for non-ECC memory, may incur in performance overhead. http://en.wikipedia.org/wiki/Memory_scrubbing 
+** <code>Demand Scrub [Enabled –> Disabled]</code>: only relevant for ECC memory better disabled for non-ECC memory, may incur in performance overhead. http://en.wikipedia.org/wiki/Memory_scrubbing#Demand_Scrub 
+** <code>Data Scrambling [Enabled –> Disabled]</code>: only relevant for ECC memory better disabled for non-ECC memory, may incur in performance overhead. http://en.wikipedia.org/wiki/Data_scrubbing 
+** <code>Device Tagging [Disabled ?–> Enabled]</code>: further research needed but appears to offer increasing the amount of main memory cacheable in L2 http://www.webopedia.com/TERM/T/tag_RAM.html 
+** <code>Allow 2x Refresh [Enabled]</code>: allow modifying the 2x refreshing function, may have an impact in performance and may be worth further investigating. http://en.wikipedia.org/wiki/Memory_refresh
 
 
 The following selected BIOS settings (or factors) affect performance in various ways and their values (or factor levels) are discussed.
