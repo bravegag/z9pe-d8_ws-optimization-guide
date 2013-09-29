@@ -15,6 +15,7 @@ h2. BIOS Performance Settings
 ** DRAM latencies WRITE, READ etc.: TODO interesting to try different values maybe to match those of the RAM specifications.
 * CPU Configuration
 ** Execute Disabled Bit [Enabled –> Disabled]: The Execute Disabled Bit (EDB) prevents malicious buffer overflow attacks when combined with a supporting OS (only enterprise OS versions support this) e.g. Ubuntu does not support it so we can safely disable it. Researching this feature reveals that it may degrade performance and may even cause application/system crashes in non supported OS. 
+** Server Class [Custom –> HPC]: options include [Custom, Enterprise or HPC] low level cache prefetching behavior TODO. 
 
 
 The following selected BIOS settings (or factors) affect performance in various ways and their values (or factor levels) are discussed.
