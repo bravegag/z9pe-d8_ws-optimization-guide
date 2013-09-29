@@ -8,6 +8,8 @@ The main reference for this guid is the official ["ASUS Users Manual":http://dlc
 
 h2. BIOS Performance Settings
 
+The following selected BIOS settings (or factors) affect performance in various ways and their values (or factor levels) are discussed:
+
 * <code>AI Tweaker Menu</code> 
 ** <code>AI Overclock Tuner [Auto]</code>: TODO
 ** <code>Clock Spread Spectrum [Disabled]</code>: disabled by default, enhances AI overclocking. 
@@ -43,8 +45,6 @@ h2. BIOS Performance Settings
 ** <code>Device Tagging [Disabled ?–> Enabled]</code>: further research needed but appears to offer increasing the amount of main memory cacheable in L2 http://www.webopedia.com/TERM/T/tag_RAM.html 
 ** <code>Allow 2x Refresh [Enabled]</code>: allow modifying the 2x refreshing function, may have an impact in performance and may be worth further investigating. http://en.wikipedia.org/wiki/Memory_refresh
 
-
-The following selected BIOS settings (or factors) affect performance in various ways and their values (or factor levels) are discussed.
 
 h2. Operating System Settings
 
