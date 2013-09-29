@@ -58,7 +58,8 @@ h2. Operating System Settings
 
 h3. Ubuntu 12.04
 
-** <code>CPU Configuration –> Local APIC Mode [Auto]</code> may slow things down and risk stability issues and often advised to disable while troubleshooting Ubuntu issues <code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash reboot=bios acpi=off noapic nolapic"</code>
+* <code>CPU Configuration –> Local APIC Mode [Auto]</code> may slow things down and risk stability issues and often advised to disable while troubleshooting Ubuntu issues <code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash reboot=bios acpi=off noapic nolapic"</code>
+* <code>ACPI Settings –> Enable ACPI Auto Configuration [* –> Disabled]</code>: ACPI (Advanced Configuration and Power Interface) may explain [booting/system stability/segfault/performance] issues and it is often advised to be disabled in Ubuntu. Disable it by editing grub to <code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash reboot=bios acpi=off noapic nolapic"</code>
 
 h3. Windows 7
 
