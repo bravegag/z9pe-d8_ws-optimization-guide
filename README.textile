@@ -51,7 +51,7 @@ The following selected BIOS settings (or factors) affect performance in various 
 * <code>PCI Subsystem Settings –> PCI Latency Timer [32 PCI Bus Clocks –> ?]</code>: TODO good potential finding the best performance parameters for HPC. 
 * <code>PCI Express Settings –> ASPM Support [Disabled]</code>: Active State Power Management controls power consumption of PCI-E peripherals. 
 * <code>ACPI Settings –> Enable ACPI Auto Configuration [* –> Disabled]</code>: disable all ACPI settings e.g. disable Hibernation. 
-* <code>WHEA Configuration –> WHEA Support [Enabled –> Disabled]</code>: Windows Hardware Error Architecture support, irrelevant, we use Ubuntu. 
+* <code>WHEA Configuration –> WHEA Support [Enabled –> Disabled]</code>: Windows Hardware Error Architecture support, disable when using Ubuntu. 
 * <code>Onboard LAN Configuration –> Intel W82574L OpROM1 [PXE –> iSCSI]</code>: TODO try the setting iSCSI for improved LAN performance (not sure yet whether this will increase the LAN speed to 1000 MB/s) 
 
 h2. Operating System Settings
