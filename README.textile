@@ -6,6 +6,9 @@ Why this guide? The Z9PED8 WS is arguably the most powerful Worstation motherboa
 
 h2. BIOS Performance Settings
 
+* AI Tweaker Menu 
+** AI Overclock Tuner [Auto]: todo
+
 The following selected BIOS settings (or factors) affect performance in various ways and their values (or factor levels) are discussed.
 
 h2. Operating System Settings
