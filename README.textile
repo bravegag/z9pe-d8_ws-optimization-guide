@@ -26,7 +26,11 @@ h2. BIOS Performance Settings
 * <code>Chipset QPI Configuration</code>
 ** <code>Isoc [Enabled]</code>: TODO Vudu parameter but sounds important :)
 ** <code>QPI Link Speed Mode [Fast]</code>: QPI (Intel QuickPath interconnect) protocol that allows fast direct connection between two CPUs.
-** <code>QPI Link Frequency Select [Auto ?–> 8.0 GT/s]</code>: another Vudu parameter worth further investigating, there is no clear “higher is better” as it seems to depend on other CPU parameters e.g. voltage, overclocking etc. 
+** <code>QPI Link Frequency Select [Auto ?–> 8.0 GT/s]</code>: TODO another Vudu parameter worth further investigating, there is no clear “higher is better” as it seems to depend on other CPU parameters e.g. voltage, overclocking etc. 
+** <code>QPI Link0s [Disabled]</code>: TODO Vudu parameter, no explanation further research may be interesting. 
+** <code>QPI Link0p [Disabled]</code>: TODO Vudu parameter, no explanation further research may be interesting. 
+** <code>QPI Link1 [Enabled]</code>: TODO Vudu parameter, no explanation found but may be interesting researching the effects of this. http://www.ubuntu.com/certification/catalog/component/pci/8086:3c90/ “Unknown” category in Ubuntu, may be worth disabling. 
+
 
 The following selected BIOS settings (or factors) affect performance in various ways and their values (or factor levels) are discussed.
 
