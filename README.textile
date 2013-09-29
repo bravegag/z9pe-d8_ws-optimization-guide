@@ -16,6 +16,7 @@ h2. BIOS Performance Settings
 * <code>CPU Configuration</code>
 ** <code>Execute Disabled Bit [Enabled –> Disabled]</code>: The Execute Disabled Bit (EDB) prevents malicious buffer overflow attacks when combined with a supporting OS (only enterprise OS versions support this) e.g. Ubuntu does not support it so we can safely disable it. Researching this feature reveals that it may degrade performance and may even cause application/system crashes in non supported OS. 
 ** <code>Server Class [Custom –> HPC]</code>: options include <code>[Custom, Enterprise or HPC]</code> low level cache prefetching behavior TODO. 
+** <code>CPU Configuration –> Intel Virtualization Technology [Enabled –> Disabled]</code>: working in native, there is no need to enable I-VT, researching this parameter turns out that it inhibits automatic overclocking and may ceil performance in native mode.
 
 
 The following selected BIOS settings (or factors) affect performance in various ways and their values (or factor levels) are discussed.
