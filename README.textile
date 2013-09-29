@@ -12,7 +12,7 @@ h2. BIOS Performance Settings
 ** AI Overclock Tuner [Auto]: TODO
 ** Clock Spread Spectrum [Disabled]: disabled by default, enhances AI overclocking. 
 * DRAM Timing Control
-** DRAM latencies WRITE, READ etc.: TODO interesting to try different values maybe to match those of the RAM specs.
+** DRAM latencies WRITE, READ etc.: TODO interesting to try different values maybe to match those of the RAM specifications.
 * CPU Configuration
 ** Execute Disabled Bit [Enabled –> Disabled]: prevents malicious buffer overflow attacks when combined with a supporting OS (only enterprise OS versions support this) e.g. Ubuntu does not support it so we can safely disable it. Researching this feature reveals that it may degrade performance and may even cause application/system crashes in non supported OS. 
 
