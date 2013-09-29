@@ -19,7 +19,7 @@ h2. BIOS Performance Settings
 ** <code>CPU Configuration –> Intel Virtualization Technology [Enabled –> Disabled]</code>: working in native, there is no need to enable I-VT, researching this parameter turns out that it inhibits automatic overclocking and may ceil performance in native mode.
 ** <code>CPU Configuration –> Local APIC Mode [Auto]</code>: APIC (Advanced Programmable Interrupt Controllers) relevant for multi-processor configurations see http://en.wikipedia.org/wiki/Local_APIC and http://en.wikipedia.org/wiki/Local_APIC#Problems
 ** <code>CPU Power Management –> Power Technology [Custom]</code>: Controls power management features TODO.
-** <code>CPU Power Management –> Power Technology[Custom] –> Enhanced Intel SpeedStep Technology [Enabled –> Disabled]</code>: may slow things down as CPUs are continuously tuned for power consumption/performance trade-off, may not relevant for HPC machines. 
+** <code>CPU Power Management –> Power Technology [Custom] –> Enhanced Intel SpeedStep Technology [Enabled –> Disabled]</code>: may slow things down as CPUs are continuously tuned for power consumption/performance trade-off, may not relevant for HPC machines. 
 
 The following selected BIOS settings (or factors) affect performance in various ways and their values (or factor levels) are discussed.
 
