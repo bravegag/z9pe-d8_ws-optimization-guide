@@ -1,4 +1,1 @@
-z9pe-d8_ws-optimization-guide
-=============================
-
-Optimization guide for the motherboard ASUS Z9PE-D8 WS
+This is a Performance Optimization guide for the ["ASUS Z9PE-D8_WS motherboard":http://www.asus.com/Motherboards/Z9PED8_WS/]. The guide initially offers optimizations geared towards HPC but can be extended for other purposes. The optimization will include performance-related BIOS parameters and OS settings. 
