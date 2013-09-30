@@ -18,7 +18,6 @@ The following selected BIOS settings (or factors) affect performance in various 
 * <code>CPU Configuration</code>
 ** <code>Execute Disabled Bit [Enabled –> Disabled]</code>: The Execute Disabled Bit (EDB) prevents malicious buffer overflow attacks when combined with a supporting OS (only enterprise OS versions support this) e.g. Ubuntu does not support it so we can safely disable it. Researching this feature reveals that it may degrade performance and may even cause application/system crashes in non supported OS. 
 ** <code>Server Class [Custom –> HPC]</code>: options include <code>[Custom, Enterprise or HPC]</code> low level cache prefetching behavior TODO. 
-* <code>CPU Configuration</code>
 ** <code>Intel Virtualization Technology [Enabled –> Disabled]</code>: working in native, there is no need to enable I-VT, researching this parameter turns out that it inhibits automatic overclocking and may ceil performance in native mode.
 ** <code>Local APIC Mode [Auto]</code>: APIC (Advanced Programmable Interrupt Controllers) relevant for multi-processor configurations see http://en.wikipedia.org/wiki/Local_APIC and http://en.wikipedia.org/wiki/Local_APIC#Problems
 * <code>CPU Power Management</code>
@@ -48,7 +47,7 @@ The following selected BIOS settings (or factors) affect performance in various 
 ** <code>Intel I/OAT [Disabled –> Enabled]</code>: enable I/O acceleration technology, High-Speed Networking acceleration http://www.intel.com/content/www/us/en/wireless-network/accel-technology.html, http://www.intel.com/content/www/us/en/io/i-o-acceleration-technology-paper.html http://en.wikipedia.org/wiki/Direct_memory_access#I.2FOAT 
 ** <code>DCA Support [Enabled]</code>: Direct Cache Access (DCA) allows a capable I/O device, such as a network controller, to place data directly into CPU cache, reducing cache misses and improving application response times. 
 * <code>Intel VT-d [Enabled –> Disabled]</code>: hardware assisted VT for directed I/O configuration, not relevant for native configurations. 
-* <code>PCI Subsystem Settings –> PCI Latency Timer [32 PCI Bus Clocks –> ?]</code>: TODO good potential finding the best performance parameters for HPC. 
+* <code>PCI Subsystem Settings –> PCI Latency Timer [32 PCI Bus Clocks –> e.g. 64]</code>: TODO good potential finding the best performance parameters for HPC. 
 * <code>PCI Express Settings –> ASPM Support [Disabled]</code>: Active State Power Management controls power consumption of PCI-E peripherals. 
 * <code>ACPI Settings –> Enable ACPI Auto Configuration [* –> Disabled]</code>: disable all ACPI settings e.g. disable Hibernation. 
 * <code>WHEA Configuration –> WHEA Support [Enabled –> Disabled]</code>: Windows Hardware Error Architecture support, disable when using Ubuntu. 
